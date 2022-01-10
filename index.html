@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Módulo CSS</title>
+        <meta charset="utf-8" />
+        <link href="css/style.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="javascript/script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body>
+
+        <header class="cor-header">
+            <i class="fa fa-bars"style="font-size:20px;"></i>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Contatos</a></li>
+                </ul>
+
+            </div>
+        </header>
+
+        
+
+    </body>
+
+    <script>
+        var selecionar = document.querySelectorAll('i')[0];
+
+        selecionar.addEventListener('click', function(){
+
+            
+
+            var ativar = document.querySelector('div.menu');
+
+            ativar.classList.toggle('mostrar');
+
+            /*if(ativar.classList.contains('mostrar')){
+
+                ativar.classList.remove('mostrar');
+
+            }else{
+
+                ativar.classList.add('mostrar');
+
+            }*/
+
+            
+
+        });        
+    </script>
+</html>
+
